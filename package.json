@@ -1,0 +1,31 @@
+{
+  "name": "afkscapedrop",
+  "version": "1.0.0",
+  "description": "Analyze RS chat to notify for drops/events",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib",
+    "start": "npm run build; node lib/index.js;"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwilde345/AFKScapeDrop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mwilde345/AFKScapeDrop/issues"
+  },
+  "homepage": "https://github.com/mwilde345/AFKScapeDrop#readme",
+  "dependencies": {
+    "aws-sdk": "^2.470.0",
+    "desktop-screenshot": "^0.1.1",
+    "sharp": "^0.22.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5"
+  }
+}
