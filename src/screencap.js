@@ -1,32 +1,35 @@
 const screenshot = require('desktop-screenshot');
 const sharp = require('sharp');
 const LEFT = 0;
-const TOP = 1080;
-const WIDTH = 600;
-const HEIGHT = 200;
+const TOP = 1200;
+const WIDTH = 800;
+const HEIGHT = 400;
+// 2560 x 1600
+// system_profiler SPDisplaysDataType | grep Resolution
 
 export default function main() {
   return new Promise((resolve, reject) => {
-    screenshot("screenshot.png", 
-    // {
-    //   width: 400,
-    //   height: 400
-    // },
+    screenshot("./pic/screenshot.png",
     function (error, complete) {
       if (error) {
         console.log("Screenshot failed", error);
         reject();
       } else {
         console.log("Screenshot succeeded");
-        sharp('screenshot.png')
+        // timeout for no reason
+        setTimeout(()=> {
+          sharp('./pic/screenshot.png')
           .extract({ left: LEFT, top: TOP, width: WIDTH, height: HEIGHT })
-          .toFile('cropped.png')
+          .toFile('./pic/cropped.png')
           .then(data => {
+            console.log("Cropping succeeded")
             resolve(data)
           })
           .catch(err => {
             reject(err);
           });
+        }, 2000)
+        
       }
     });
   })
