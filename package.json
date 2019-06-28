@@ -22,6 +22,9 @@
     "aws-sdk": "^2.470.0",
     "desktop-screenshot": "^0.1.1",
     "flexsearch": "^0.6.22",
+    "jimp": "^0.6.4",
+    "pngjs": "^3.4.0",
+    "robotjs": "^0.5.1",
     "sharp": "^0.22.1",
     "tesseract.js": "^2.0.0-alpha.10",
     "twilio": "^3.33.0"
