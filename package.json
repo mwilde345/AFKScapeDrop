@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/mwilde345/AFKScapeDrop#readme",
   "dependencies": {
-    "aws-sdk": "^2.470.0",
+    "aws-sdk": "^2.814.0",
     "desktop-screenshot": "^0.1.1",
     "flexsearch": "^0.6.22",
     "jimp": "^0.6.4",
