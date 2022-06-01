@@ -25,7 +25,7 @@
     "jimp": "^0.6.4",
     "pngjs": "^3.4.0",
     "robotjs": "^0.5.1",
-    "sharp": "^0.22.1",
+    "sharp": "^0.30.5",
     "tesseract.js": "^2.0.0-alpha.10",
     "twilio": "^3.33.0"
   },
